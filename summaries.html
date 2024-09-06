@@ -82,6 +82,13 @@
     }
 
     </style>
+    <script>
+        // Determine the base URL dynamically
+        var baseUrl = '';
+        if (window.location.hostname.includes('github.io')) {
+            baseUrl = '/rom_project_static';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -91,9 +98,9 @@
     </header>
     <nav>
         <div class="container">
-            <a href="/">Home</a>
-            <a href="/summaries.html">Summaries</a>
-            <a href="/timeline.html">Timeline</a>
+            <a href="javascript:void(0);" onclick="window.location.href = baseUrl + '/'">Home</a>
+            <a href="javascript:void(0);" onclick="window.location.href = baseUrl + '/summaries.html'">Summaries</a>
+            <a href="javascript:void(0);" onclick="window.location.href = baseUrl + '/timeline.html'">Timeline</a>
         </div>
     </nav>
     <div class="container">
