@@ -1,0 +1,208 @@
+{
+  "title": {
+    "text": {
+      "headline": "As Built As Deployed Project Papers Timeline",
+      "text": "A timeline of significant project papers"
+    }
+  },
+  "events": [
+    {
+      "start_date": {
+        "year": 2025,
+        "month": 3,
+        "day": 1
+      },
+      "text": {
+        "headline": "Uncertainty-Aware, Structure-Preserving Machine Learning Approach For Domain Shift Detection From Nonlinear Dynamic Responses Of Structural Systems",
+        "text": "\"The paper presents a novel approach to structural health monitoring (SHM) by integrating an uncertainty-aware machine learning (ML) framework with a focus on structure-preserving characteristics. It addresses the challenge of detecting domain shifts\\u2014situations where the data from an operational system diverges from the data used for training due to underlying structural changes, such as damage. The proposed method employs a spectral-normalized neural Gaussian process (SNGP) algorithm that combines neural networks' flexibility with Gaussian processes\\u2019 uncertainty quantification capabilities. The model is designed to maintain distance preservation within the input state space, allowing it to effectively identify and respond to statistically significant shifts in the structure's dynamic responses, which are not directly observable due to spatial localization of the nonlinearities.\\n\\nThe authors demonstrate this approach by applying it to a computational example of a nonlinear structural system subjected to various damage conditions. The effectiveness of the methodology in detecting domain shifts is confirmed through systematic binary hypothesis testing on the variance of model predictions, showcasing its robustness even under normative changes. This study contributes to the advancement of digital twin technologies in SHM, facilitating real-time monitoring and predictive analytics in engineering applications, thereby ensuring reliability and safety in complex structural systems. Future work will explore the incorporation of additional uncertainties and the application of the proposed methods to broader contexts within structural engineering.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 7,
+        "day": 10
+      },
+      "text": {
+        "headline": "A Reduced Order Model Conditioned on Monitoring Features for Estimation and Uncertainty Quantification in Engineered Systems",
+        "text": "\"This paper presents a novel Reduced Order Model (ROM) framework, termed *VpROM*, leveraging conditional Variational Autoencoders (cVAEs) to effectively predict responses in nonlinear parametric systems while integrating uncertainty quantification. Unlike traditional ROM methods that rely on predefined and often unknown physics-based parameters, the *VpROM* adaptively conditions its model on features derived from real-time monitoring data, allowing for a more practical and responsive model tuning in structural health monitoring (SHM). The framework combines a projection-based approach with generative deep learning to achieve robust local projection bases, thus maintaining high fidelity in system response predictions while simultaneously providing uncertainty estimates for these predictions.\\n\\nThe authors validate their approach through two distinct case studies: a two-dimensional arc structure experiencing geometric nonlinearities and a large-scale kingpin connection model characterized by plasticity. The results demonstrate that the *VpROM* effectively captures the dynamics and uncertainties inherent in the systems under consideration, achieving significant speed improvements\\u2014up to 25 times faster than full-order model simulations\\u2014while ensuring the delivery of reliable response envelopes encapsulating the uncertainty of the predictions. This framework effectively addresses the challenges of high computational costs in engineering simulations, particularly in applications involving SHM, and highlights the potential of integrating machine learning techniques with traditional modeling approaches in engineering disciplines.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 6,
+        "day": 21
+      },
+      "text": {
+        "headline": "A Bayesian Multi-Fidelity Neural Network To Predict Nonlinear Frequency Backbone Curves",
+        "text": "\"The paper \\\"A Bayesian Multi-Fidelity Neural Network To Predict Nonlinear Frequency Backbone Curves\\\" by David A. Najera-Flores et al. addresses the challenges in predicting the nonlinear frequency backbone curves of complex structural systems using varying fidelity models. The authors propose a multifidelity surrogate modeling approach that combines low-fidelity and high-fidelity finite element models to enhance prediction accuracy while maintaining computational efficiency. By employing an ensemble of neural networks, the model learns the relationship between input parameters and output frequencies through nonlinear transformations, with Bayesian layers incorporated for uncertainty quantification. This work specifically targets the Tribomechadynamics Research Challenge, where the objective is to predict the nonlinear dynamic response of an experimental mechanical structure influenced by frictional contact and geometric nonlinearity.\\n\\nThrough sensitivity analysis of design parameters, the authors identify key inputs and demonstrate how their multifidelity surrogate model can efficiently explore parameter space while accurately forecasting the response to actual experimental data. The paper details their methodology, including Bayesian calibration techniques for uncertain parameter distributions and the use of a Markov Chain Monte Carlo (MCMC) approach to derive posterior distributions. Numerical results indicate that their surrogate model effectively captures the variability in amplitude-dependent frequency responses, while the Bayesian inference reveals insights into critical parameters influencing the structure's behavior, thus providing a valuable tool for future engineering applications in structural dynamics.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 6,
+        "day": 21
+      },
+      "text": {
+        "headline": "Uncertainty Quantification Of A Machine Learning Model For Identification Of Isolated Nonlinearities With Conformal Prediction",
+        "text": "\"The paper by Najera-Flores et al. investigates the impact of measurement noise on a machine learning framework for identifying isolated nonlinearities in structural systems. Previous work established a physics-informed neural network capable of estimating deviatoric forces from clean data, but real-world applications often involve noisy measurements. This study explores the sensitivity of the trained neural network to both noise-free and noisy data, employing conformal prediction methods to quantify uncertainty in response predictions. By leveraging statistical techniques such as the jackknife estimator, the authors define distribution-free prediction intervals for the neural network outputs, allowing the framework to be utilized effectively in structural health monitoring applications.\\n\\nIn their approach, the authors implement a structure-preserving machine learning model that captures the dynamics of systems with localized nonlinearities and employs conformal regression to handle uncertainty in predictions. The results demonstrate that the model's performance remains robust even with the introduction of noise, successfully identifying deviations in structural responses attributable to damage. The authors validate their framework using numerical examples and hypothesis testing to illustrate its effectiveness. Ultimately, the paper highlights the framework's potential for real-time application in structural health monitoring, identifying changes in system behavior while adequately quantifying uncertainty. Future work will focus on integrating broader sources of uncertainty and applying this methodology to experimental systems.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 3,
+        "day": 15
+      },
+      "text": {
+        "headline": "A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities",
+        "text": "\"This paper presents a novel machine learning framework aimed at accurately predicting the dynamics of structural systems that contain localized nonlinearities, such as those found in joints or interfaces. These nonlinearities complicate the development of effective reduced-order models due to their global impact on system dynamics. The authors introduce a structure-preserving approach that leverages a multilayer perceptron to predict a deviatoric force, which encapsulates the effects of these nonlinearities, based solely on measured responses at the boundaries of the nonlinear regions. By removing the need for direct numerical simulations of the nonlinearities, this method allows for more efficient modeling while maintaining the integrity of the underlying linear dynamics of the external structure.\\n\\nUtilizing a specific case involving cubic nonlinearities and hysteretic damping within a structural system, the authors demonstrate the effectiveness of their approach. Once trained, the machine learning model can accurately predict system responses for a variety of initial conditions and external excitations, with its predictions robustly capturing the responses of different operating configurations, including relocation of the nonlinear region. This work contributes to the advancement of reduced-order modeling techniques and has significant implications for applications in digital twins and structural health monitoring, positing potential future explorations in incorporating additional uncertainties and nonlinear features in the modeling framework.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 3,
+        "day": 15
+      },
+      "text": {
+        "headline": "A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities",
+        "text": "\"This paper presents a novel machine learning framework aimed at accurately predicting the dynamics of structural systems that contain localized nonlinearities, such as those found in joints or interfaces. These nonlinearities complicate the development of effective reduced-order models due to their global impact on system dynamics. The authors introduce a structure-preserving approach that leverages a multilayer perceptron to predict a deviatoric force, which encapsulates the effects of these nonlinearities, based solely on measured responses at the boundaries of the nonlinear regions. By removing the need for direct numerical simulations of the nonlinearities, this method allows for more efficient modeling while maintaining the integrity of the underlying linear dynamics of the external structure.\\n\\nUtilizing a specific case involving cubic nonlinearities and hysteretic damping within a structural system, the authors demonstrate the effectiveness of their approach. Once trained, the machine learning model can accurately predict system responses for a variety of initial conditions and external excitations, with its predictions robustly capturing the responses of different operating configurations, including relocation of the nonlinear region. This work contributes to the advancement of reduced-order modeling techniques and has significant implications for applications in digital twins and structural health monitoring, positing potential future explorations in incorporating additional uncertainties and nonlinear features in the modeling framework.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 2,
+        "day": 29
+      },
+      "text": {
+        "headline": "VpROM: A novel variational autoencoder-boosted reduced order model for the treatment of parametric dependencies in nonlinear systems",
+        "text": "\"The paper introduces VpROM (Variational autoencoder-boosted reduced order model), a novel approach to creating reduced order models (ROMs) for nonlinear parametric systems that addresses computational inefficiencies associated with conventional methods. Traditional ROM techniques often employ projection-based reduction, such as Proper Orthogonal Decomposition (POD), which can struggle with nonlinear behaviors and parametric dependencies. VpROM proposes using Variational Autoencoders (VAEs) as a generative modeling tool to derive local reduction bases and dynamically approximate the relationship between parametric inputs and corresponding reduced bases. This new method enhances the flexibility and performance of the ROM by allowing for high-precision representations across diverse response regimes and enabling uncertainty quantification in the model predictions.\\n\\nThe effectiveness of the proposed VpROM framework is validated through two case studies: a nonlinear two-story shear frame with hysteretic links and a large-scale wind turbine tower featuring plastic behavior. Results demonstrate that VpROM outperforms existing state-of-the-art ROMs, including MACpROM and CpROM, by providing improved accuracy in capturing dynamic responses and reducing computational costs significantly\\u2014up to nearly 40 times faster than full-order models (FOMs). The VpROM method allows not only for robust approximations across varying parametric configurations but also for uncertainty assessments on output predictions, making it a promising tool for applications in structural health monitoring and digital twinning.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 1,
+        "day": 19
+      },
+      "text": {
+        "headline": "Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion",
+        "text": "\"The paper \\\"Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion\\\" by Vlachas et al. proposes a new approach to reduced-order modeling (ROM) that combines physics-based reduction with a response decomposition technique specifically designed for systems with localized nonlinearities. This Component-Oriented Reduction (COR) technique applies a \\\"divide and conquer\\\" strategy, isolating individual component modes to handle localized nonlinear features while employing global modes to accurately capture the overall dynamics of the system. By using proper orthogonal decomposition (POD) combined with hyper-reduction techniques, the COR-ROM is capable of efficiently approximating the dynamics of complex systems within a broad range of parametric inputs. The paper demonstrates the effectiveness of this methodology through numerical examples involving a four-story shear frame and a large-scale kingpin connection, successfully showcasing the approach's capacity to facilitate accelerated computations while maintaining accuracy in representing nonlinear behaviors.\\n\\nThe authors discuss the limitations of existing modeling techniques when dealing with nonlinear dynamic responses and highlight the robustness and efficiency of the COR-ROM framework. It allows for real-time evaluations relevant to structural health monitoring (SHM) applications, capturing essential physical characteristics and dynamic information on both localized and global scales. The comprehensive results of the numerical tests emphasize that the COR-ROM outperforms traditional global ROM approaches, confirming its utility for complex structural assemblies with localized features. The framework provides a foundation for future advancements in the field, suggesting enhancements that can improve its adaptability to more complex situations with multiple nonlinearities.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 1,
+        "day": 1
+      },
+      "text": {
+        "headline": "Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion",
+        "text": "\"The paper by Vlachas et al. proposes a novel physics-based Component-Oriented Reduction (COR) approach that integrates a parametric reduced-order modeling (ROM) framework with response decomposition techniques for efficient analysis of complex assembly systems with localized nonlinear features. The methodology incorporates individual component behaviors to accurately capture both localized and global dynamics of a system undergoing nonlinear effects. By employing a proper orthogonal decomposition (POD), the framework derives low-order representations of the system\\u2019s response that are robust under variations in input parameters, thus demonstrating its effectiveness in scenarios like structural health monitoring (SHM) applications.\\n\\nThe authors validate the COR-ROM through several numerical case studies, including a four-story shear frame with hysteretic non-linearities and a large-scale kingpin connection experiencing plasticity. The results indicate that the COR-ROM excels in maintaining computational efficiency while effectively approximating the system's dynamic behavior across various configurations. This approach not only demonstrates a promising solution for real-time evaluations but also highlights the importance of local component handling in achieving higher accuracy in dynamic modeling of complex structural systems. The research findings underline the potential for future applications in digital twin technology and SHM by enabling more effective monitoring and assessment of structures with intricate non-linear behaviors.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2024,
+        "month": 1,
+        "day": 1
+      },
+      "text": {
+        "headline": "Accelerating Structural Dynamics Simulations With Localised Phenomena Through Matrix Compression And Projection-Based Model Order Reduction",
+        "text": "\"The paper discusses a novel method for enhancing the efficiency of structural dynamics simulations in the presence of localized phenomena, such as cracks or stiffness reductions. Traditional projection-based Model Order Reduction (MOR) techniques face challenges when dealing with varying damage scenarios, often requiring expensive full-order model solutions to adapt to changes. The proposed approach enriches an initial low-dimensional basis derived from a healthy system with selected columns from the flexibility matrix, allowing for effective representation of the system's response under localized damage without needing repeated full-order evaluations. By employing a hierarchical matrix representation (HODLR), the method minimizes storage requirements and computational costs associated with flexibility matrix calculations.\\n\\nThe authors validate the efficiency and accuracy of their method through a series of numerical examples, demonstrating substantial speedups (up to 150 times) in simulating various structural scenarios involving local damage. The model retains precision in capturing dynamic responses while significantly reducing the computational load usually associated with traditional methods. However, the increased computational demands for matrix generation and size limitations based on problem complexity are highlighted as potential drawbacks. Future work aims to optimize the approach further and apply it to dynamic crack propagation problems, thus extending its versatility in structural health monitoring and predictive maintenance.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2023,
+        "month": 5,
+        "day": 1
+      },
+      "text": {
+        "headline": "Parameter Estimation For Dynamical Systems Under Continuous And Discontinuous Gaussian Noise Using Data Assimilation Techniques",
+        "text": "\"The paper by Jacobs et al. investigates parameter estimation techniques for dynamical systems subject to continuous and discontinuous Gaussian noise, utilizing data assimilation methods. The authors focus on how unknown states, parameters, or inputs in complex aerospace structures can be estimated through sensor data that corrects process model predictions. They evaluate the efficacy of the ensemble Kalman filter and Kalman-Bucy filter on a case study involving a slender flat beam exhibiting nonlinear characteristics. Their findings illustrate that both filters significantly enhance the accuracy of state estimation compared to traditional methods, particularly when accounting for uncertainty in process and measurement noise.\\n\\nIn their analysis, the authors establish a Bayesian hierarchical model that incorporates various noise processes. The ensemble Kalman filter is shown to effectively mitigate variances in parameter estimates, facilitating a more robust approach to monitoring and decision-making in the structural dynamics context. Conversely, the Kalman-Bucy filter is demonstrated to yield refined estimates leveraging continuous noise models, albeit with increased computational complexity due to the solution of Riccati equations. Overall, this research provides a foundational framework for applying data assimilation techniques to complex dynamical systems in aerospace engineering, underscoring the importance of noise modeling in improving parameter estimation accuracy.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2023,
+        "month": 2,
+        "day": 11
+      },
+      "text": {
+        "headline": "A Structure-Preserving Neural Differential Operator With Embedded Hamiltonian Constraints For Modeling Structural Dynamics",
+        "text": "\"The paper \\\"A Structure-Preserving Neural Differential Operator With Embedded Hamiltonian Constraints For Modeling Structural Dynamics\\\" by David A. Najera-Flores and Michael D. Todd presents a novel framework that enhances neural network models by integrating physical principles from Hamiltonian mechanics to effectively model complex structural dynamics. The authors argue that traditional data-driven approaches often falter outside their training domains and propose a method that embeds physical constraints\\u2014specifically, Hamiltonian (energy-based) properties\\u2014into the neural network architecture. This approach incorporates multilayer perceptrons to model potential, kinetic energy, and Rayleigh damping terms while utilizing auto-differentiation for computing derivatives and forming the necessary equations of motion. The use of a physics-informed autoencoder allows for the transformation between measured and generalized coordinates, effectively creating a digital twin capable of simulating dynamic systems accurately, even when faced with new conditions.\\n\\nThe efficacy of the proposed framework is demonstrated through numerical examples, including systems like Euler\\u2013Bernoulli beams and nonlinear oscillators. Results indicate that the network not only learns to represent the modal characteristics and dynamics of these systems robustly, but can also identify shifts in the data domain, which is crucial for real-world applications such as system identification and structural health monitoring. Overall, the method showcases the potential of bridging machine learning with physical principles to develop interpretable, structure-preserving models that can adapt to dynamic environments, paving the way for upcoming advancements in predictive modeling and digital twins in engineering disciplines.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2023,
+        "month": 1,
+        "day": 1
+      },
+      "text": {
+        "headline": "A Physics-Based Reduction With Monitoring Data Assimilation For Adaptive Representations In Structural Systems",
+        "text": "\"The paper presents a novel approach for creating adaptive digital twin representations of structural systems using a reduced-order modeling (ROM) framework that integrates monitoring data for enhanced structural health monitoring. The authors propose a projection-based ROM that employs proper orthogonal decomposition (POD) to generate a computationally efficient surrogate of high-fidelity structural responses. This method addresses the limitations of conventional ROMs when structural behavior deviates due to extreme events such as earthquakes or damage. To improve accuracy during operational challenges, the framework incorporates a Gaussian processes regressor (GPR) that refines the projection basis in real-time by utilizing sparse monitoring data. This adaptive process not only enhances prediction accuracy but also provides uncertainty quantification and alerts to potential irreversible damage.\\n\\nThe effectiveness of the proposed adaptive GPR-ROM is validated through case studies involving a cantilever beam and a plane frame structure, demonstrating its capability to accurately capture responses during damage scenarios. The results show significant improvements compared to initial healthy ROMs, particularly in managing the complexities associated with nonlinear behavior and condition deterioration. This study highlights the crucial role of data assimilation techniques in enhancing the operability and reliability of digital twins in structural health monitoring, paving the way for further research into inverse modeling applications that estimate a system's state based on observational data.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2022,
+        "month": 4,
+        "day": 26
+      },
+      "text": {
+        "headline": "Variational AutoEncoder Boosted Parametric Reduced Order Modelling (pROM)",
+        "text": "\"The paper titled \\\"Variational AutoEncoder (VAE) Boosted Parametric Reduced Order Modelling (pROM)\\\" introduces a novel approach to enhance the traditional methodologies used in reduced-order modeling by integrating Variational Autoencoders (VAEs) for handling parametric dependencies. The authors present a framework that effectively combines physics-based reduced-order models with machine learning techniques to capture multi-parametric dependencies within complex systems. The VAE serves as a generative model that can learn nonlinear relationships among parameters, offering improved accuracy in projections to latent spaces. This allows for efficient uncertainty quantification and enhances the fidelity of reduced-order models by adapting them to new parameters through a conditional VAE framework.\\n\\nIn their numerical validation, the framework was tested on scenarios involving a two-story frame subjected to varying loads, demonstrating its ability to accurately model nonlinear responses while providing confidence bounds on predictions. The results show that the VAE-boosted pROM outperforms traditional projection-based models in capturing the dynamics of the systems examined. It indicates significant potential for applications in areas such as structural health monitoring and real-time system analysis. The authors highlight future extensions, including using large datasets to improve the framework's robustness and applicability in diverse engineering challenges.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2022,
+        "month": 1,
+        "day": 1
+      },
+      "text": {
+        "headline": "On The Coupling Of Reduced Order Modeling With Substructuring Of Structural Systems With Component Nonlinearities",
+        "text": "\"This paper presents a novel approach to Reduced Order Models (ROMs) that effectively capture the dynamic responses of structural systems with localized nonlinearities through a physics-based parametric reduced order model (pROM). The authors employ a combination of dynamic substructuring techniques and Proper Orthogonal Decomposition (POD) to treat individual components separately and construct a global reduced representation of the system. This framework allows for the parametric dependencies inherent in the structural system to be incorporated by utilizing clustering methods based on the Modal Assurance Criterion (MAC) to optimize the sampling of training data. The proposed technique is assessed through numerical case studies, including a two-story frame and a 3D wind turbine tower, demonstrating its ability to approximate high-fidelity responses efficiently while achieving significant computational speedup.\\n\\nThe results show that the derived pROM can accurately replicate the time history responses and stress states of complex systems with material nonlinearities, thereby indicating its utility in tasks such as vibration control, condition monitoring, and structural health assessment. While the pROM effectively manages dynamic interactions between linear and nonlinear components, the authors note limitations related to the requirement of a few high-fidelity model evaluations for sampling and the potential need for hyper reduction techniques in larger nonlinear domains. Overall, the study highlights the advantages of a modular and adaptive approach to modeling complex structural systems while showcasing the potential for practical applications in engineering.\\n\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2021,
+        "month": 2,
+        "day": 26
+      },
+      "text": {
+        "headline": "A local basis approximation approach for nonlinear Parametric Model Order Reduction",
+        "text": "\"The paper proposes a novel approach for parametric Model Order Reduction (pMOR) aimed at accurately modeling the nonlinear dynamics of engineering structures using a low-dimensional representation, thereby simplifying computational demands. This method utilizes Proper Orthogonal Decomposition (POD) to create local bases that represent the system's behavior at different operating conditions defined by various parameters. The innovative aspect of the research is the introduction of a reduced coefficient matrix that links local response characteristics to a global solution manifold, addressing the challenge posed by nonlinearity and parameter variations. The pROM technique is demonstrated through two case studies: a simple two-story building with non-linear links and a complex wind turbine tower subjected to ground motion excitation. \\n\\nResults indicate that the proposed approach significantly enhances computational efficiency while maintaining satisfactory accuracy in predicting system behavior across diverse loading scenarios, such as varying material and excitation properties. The paper emphasizes how the method can be employed effectively for structural health monitoring, diagnostics, and the management of critical components. However, it also acknowledges certain limitations, including the requirement for prior knowledge of the parameter space and the inherent challenges in extending the method to multi-parametric situations without sophisticated sampling techniques. Overall, the research contributes to advancing the field of structural dynamics through innovative reduction methodologies that align physical phenomena with computational efficiency.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2020,
+        "month": 12,
+        "day": 1
+      },
+      "text": {
+        "headline": "Confronting Domain Shift In Trained Neural Networks",
+        "text": "\"The paper \\\"Confronting Domain Shift In Trained Neural Networks\\\" investigates the challenge of domain shift in neural networks (NNs), particularly how to maintain performance when the deployment domain deviates from the training domain. While NNs can effectively interpolate data within familiar domains, their extrapolation capabilities often lead to poor performance in shifted contexts. Previous research has leveraged NN uncertainty estimates to enhance binary classifications in shifted domains without the need for model retraining. This paper extends that concept to real-valued time series predictions, proposing a methodology that uses uncertainty quantification to identify domain shifts and improve prediction accuracy in systems characterized by nonlinear dynamics, specifically a mass-spring system and an experimental frictional joint system.\\n\\nThe authors hypothesize that uncertainty estimates can not only signal when a domain shift occurs but can also be utilized as corrective factors to refine the NN's predictions in real-time applications, such as structural health monitoring. They aim to demonstrate through experimental protocols that their approach can meaningfully improve the accuracy of time series predictions by applying dropout-based uncertainty estimates without requiring additional training data. The anticipated outcomes include public datasets for structural dynamics and an open-source code implementation, ultimately advancing the deployment of machine learning models in critical industries where safety is paramount.\""
+      }
+    },
+    {
+      "start_date": {
+        "year": 2020,
+        "month": 2,
+        "day": 20
+      },
+      "text": {
+        "headline": "A Shell Description Of Beams Incorporating Transverse Thickness Strain Energies For Receding Contact",
+        "text": "\"In the paper titled \\\"A Shell Description Of Beams Incorporating Transverse Thickness Strain Energies For Receding Contact,\\\" the authors, Adam R. Brink, Allen T. Mathis, and D. Dane Quinn, extend the geometrically exact nonlinear deflection model of a beamshell to include the effects of transverse thickness strain energies, which arise under transverse squeezing loads. This inclusion allows for the modeling of receding contact behavior in scenarios where a uniform beamshell rests on a flat, rigid surface\\u2014an aspect inadequately addressed by traditional shell theory. The methodology derives from the weak form of local momentum balance equations and generalizes traditional shell equations by incorporating higher-order terms to account for squeezing deformation. Through comparisons with predictions from finite element analysis (specifically using ABAQUS), the paper demonstrates that the proposed formulation accurately captures the transverse forces and strains, as well as dynamic responses displaying receding contact phenomena.\\n\\nThe authors highlight the importance of considering transverse strains in enhancing the predictive capability of shell models, especially for applications involving jointed structures, which often exhibit complex interaction behaviors under load. The study presents numerous examples, including uniform squeezing loads and cases of receding contact, illustrating how the new formulation aligns closely with finite element results. Ultimately, this work underscores the significant advancements in modeling elastic shells, particularly in contexts where traditional theories fall short, and sets the stage for future research into multi-layer laminates and the development of finite element methods based on the proposed higher-order beam-shell model.\""
+      }
+    }
+  ]
+}
