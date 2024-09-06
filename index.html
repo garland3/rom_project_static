@@ -24,11 +24,21 @@
             padding: 20px 0;
             text-align: center;
         }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
         h1, h2 {
             margin: 0;
-        }
-        .btn-group {
-            margin: 20px 0;
         }
         .btn {
             background-color: #3498db;
@@ -45,34 +55,36 @@
         .btn:hover {
             background-color: #2980b9;
         }
-        .paper-list {
-            background-color: white;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .paper-item {
-            border-bottom: 1px solid #eee;
-            padding: 15px 0;
-        }
-        .paper-item:last-child {
-            border-bottom: none;
-        }
-        .paper-title {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        .paper-date {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-        .search-bar {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+        
+    .paper-list {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .paper-item {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+    }
+    .paper-item:last-child {
+        border-bottom: none;
+    }
+    .paper-title {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    .paper-date {
+        color: #7f8c8d;
+        font-size: 0.9em;
+    }
+    .search-bar {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
     </style>
 </head>
 <body>
@@ -81,107 +93,113 @@
             <h1><i class="fas fa-book-reader"></i> As Built As Deployed Project Papers</h1>
         </div>
     </header>
+    <nav>
+        <div class="container">
+            <a href="/">Home</a>
+            <a href="/summaries.html">Summaries</a>
+            <a href="/timeline.html">Timeline</a>
+        </div>
+    </nav>
     <div class="container">
-        <div class="btn-group">
-            <a href="summaries.html" class="btn"><i class="fas fa-list"></i> View All Paper Summaries</a>
-            <a href="timeline.html" class="btn"><i class="fas fa-calendar-alt"></i> View Timeline</a>
+        
+    <input type="text" class="search-bar" placeholder="Search papers..." id="searchInput">
+    <div class="paper-list">
+        <h2>Paper Titles (Ordered by Date)</h2>
+        
+        <div class="paper-item">
+            <a href="summaries.html#13" class="paper-title">Uncertainty-Aware, Structure-Preserving Machine Learning Approach For Domain Shift Detection From Nonlinear Dynamic Responses Of Structural Systems</a>
+            <div class="paper-date">2025-03-01</div>
         </div>
-        <input type="text" class="search-bar" placeholder="Search papers..." id="searchInput">
-        <div class="paper-list">
-            <h2>Paper Titles (Ordered by Date)</h2>
-            
-            <div class="paper-item">
-                <a href="summaries.html#13" class="paper-title">Uncertainty-Aware, Structure-Preserving Machine Learning Approach For Domain Shift Detection From Nonlinear Dynamic Responses Of Structural Systems</a>
-                <div class="paper-date">2025-03-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#16" class="paper-title">A Reduced Order Model Conditioned on Monitoring Features for Estimation and Uncertainty Quantification in Engineered Systems</a>
-                <div class="paper-date">2024-07-10</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#1" class="paper-title">A Bayesian Multi-Fidelity Neural Network To Predict Nonlinear Frequency Backbone Curves</a>
-                <div class="paper-date">2024-06-21</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#9" class="paper-title">Uncertainty Quantification Of A Machine Learning Model For Identification Of Isolated Nonlinearities With Conformal Prediction</a>
-                <div class="paper-date">2024-06-21</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#17" class="paper-title">A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities</a>
-                <div class="paper-date">2024-03-15</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#18" class="paper-title">A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities</a>
-                <div class="paper-date">2024-03-15</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#15" class="paper-title">VpROM: A novel variational autoencoder-boosted reduced order model for the treatment of parametric dependencies in nonlinear systems</a>
-                <div class="paper-date">2024-02-29</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#11" class="paper-title">Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion</a>
-                <div class="paper-date">2024-01-19</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#6" class="paper-title">Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion</a>
-                <div class="paper-date">2024-01-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#7" class="paper-title">Accelerating Structural Dynamics Simulations With Localised Phenomena Through Matrix Compression And Projection-Based Model Order Reduction</a>
-                <div class="paper-date">2024-01-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#3" class="paper-title">Parameter Estimation For Dynamical Systems Under Continuous And Discontinuous Gaussian Noise Using Data Assimilation Techniques</a>
-                <div class="paper-date">2023-05-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#8" class="paper-title">A Structure-Preserving Neural Differential Operator With Embedded Hamiltonian Constraints For Modeling Structural Dynamics</a>
-                <div class="paper-date">2023-02-11</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#14" class="paper-title">A Physics-Based Reduction With Monitoring Data Assimilation For Adaptive Representations In Structural Systems</a>
-                <div class="paper-date">2023-01-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#10" class="paper-title">Variational AutoEncoder Boosted Parametric Reduced Order Modelling (pROM)</a>
-                <div class="paper-date">2022-04-26</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#4" class="paper-title">On The Coupling Of Reduced Order Modeling With Substructuring Of Structural Systems With Component Nonlinearities</a>
-                <div class="paper-date">2022-01-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#5" class="paper-title">A local basis approximation approach for nonlinear Parametric Model Order Reduction</a>
-                <div class="paper-date">2021-02-26</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#2" class="paper-title">Confronting Domain Shift In Trained Neural Networks</a>
-                <div class="paper-date">2020-12-01</div>
-            </div>
-            
-            <div class="paper-item">
-                <a href="summaries.html#12" class="paper-title">A Shell Description Of Beams Incorporating Transverse Thickness Strain Energies For Receding Contact</a>
-                <div class="paper-date">2020-02-20</div>
-            </div>
-            
+        
+        <div class="paper-item">
+            <a href="summaries.html#16" class="paper-title">A Reduced Order Model Conditioned on Monitoring Features for Estimation and Uncertainty Quantification in Engineered Systems</a>
+            <div class="paper-date">2024-07-10</div>
         </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#1" class="paper-title">A Bayesian Multi-Fidelity Neural Network To Predict Nonlinear Frequency Backbone Curves</a>
+            <div class="paper-date">2024-06-21</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#9" class="paper-title">Uncertainty Quantification Of A Machine Learning Model For Identification Of Isolated Nonlinearities With Conformal Prediction</a>
+            <div class="paper-date">2024-06-21</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#17" class="paper-title">A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities</a>
+            <div class="paper-date">2024-03-15</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#18" class="paper-title">A structure-preserving machine learning framework for accurate prediction of structural dynamics for systems with isolated nonlinearities</a>
+            <div class="paper-date">2024-03-15</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#15" class="paper-title">VpROM: A novel variational autoencoder-boosted reduced order model for the treatment of parametric dependencies in nonlinear systems</a>
+            <div class="paper-date">2024-02-29</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#11" class="paper-title">Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion</a>
+            <div class="paper-date">2024-01-19</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#6" class="paper-title">Parametric Reduced-Order Modeling For Component-Oriented Treatment And Localized Nonlinear Feature Inclusion</a>
+            <div class="paper-date">2024-01-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#7" class="paper-title">Accelerating Structural Dynamics Simulations With Localised Phenomena Through Matrix Compression And Projection-Based Model Order Reduction</a>
+            <div class="paper-date">2024-01-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#3" class="paper-title">Parameter Estimation For Dynamical Systems Under Continuous And Discontinuous Gaussian Noise Using Data Assimilation Techniques</a>
+            <div class="paper-date">2023-05-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#8" class="paper-title">A Structure-Preserving Neural Differential Operator With Embedded Hamiltonian Constraints For Modeling Structural Dynamics</a>
+            <div class="paper-date">2023-02-11</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#14" class="paper-title">A Physics-Based Reduction With Monitoring Data Assimilation For Adaptive Representations In Structural Systems</a>
+            <div class="paper-date">2023-01-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#10" class="paper-title">Variational AutoEncoder Boosted Parametric Reduced Order Modelling (pROM)</a>
+            <div class="paper-date">2022-04-26</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#4" class="paper-title">On The Coupling Of Reduced Order Modeling With Substructuring Of Structural Systems With Component Nonlinearities</a>
+            <div class="paper-date">2022-01-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#5" class="paper-title">A local basis approximation approach for nonlinear Parametric Model Order Reduction</a>
+            <div class="paper-date">2021-02-26</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#2" class="paper-title">Confronting Domain Shift In Trained Neural Networks</a>
+            <div class="paper-date">2020-12-01</div>
+        </div>
+        
+        <div class="paper-item">
+            <a href="summaries.html#12" class="paper-title">A Shell Description Of Beams Incorporating Transverse Thickness Strain Energies For Receding Contact</a>
+            <div class="paper-date">2020-02-20</div>
+        </div>
+        
     </div>
+
+    </div>
+    
     <script>
         document.getElementById('searchInput').addEventListener('keyup', function() {
             var input, filter, paperList, paperItems, title, i;
@@ -200,5 +218,6 @@
             }
         });
     </script>
+
 </body>
 </html>
